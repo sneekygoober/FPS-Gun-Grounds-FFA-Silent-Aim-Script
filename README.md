@@ -1,2 +1,2 @@
 # FPS-Gun-Grounds-FFA-Silent-Aim-Script
-DISCLAIMER: The silent aim may sometimes be buggy.  This is a basic silent aim with no UI for https://www.roblox.com/games/12137249458/Gun-Grounds-FFA. Please note that your executor must at least support hookfunction and require.
+This script is open-source and free. Anyone can modify/use this script without restrictions. You can also view this script over at [scriptblox.com](https://scriptblox.com/script/FPS-Gun-Grounds-FFA-Silent-Aim-Keyless-113139) or [haxhell.com](https://haxhell.com/scripts/fps-gun-grounds-ffa-fps-gun-grounds-ffa-silent-aim-keyless) or [rscripts.net](https://rscripts.net/script/fps-gun-grounds-ffa-silent-aim-keyless-VaNw).
