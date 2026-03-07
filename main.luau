@@ -19,11 +19,6 @@ local UIS: UserInputService = cloneref(game:GetService("UserInputService"));
 local plr = Players.LocalPlayer;
 local cam = workspace.CurrentCamera;
 
-local mouse: Mouse?;
-if not UIS.TouchEnabled and UIS.MouseEnabled and UIS.KeyboardEnabled then
-    mouse = plr:GetMouse();
-end;
-
 local s, Projectile = pcall(require, RS.ModuleScripts.GunModules.GunFramework.Projectile);
 if not s then
     return warn(executor .. " returned an error while trying to require RS.ModuleScripts.GunModules.GunFramework.Projectile:\n" .. Projectile);
@@ -73,7 +68,7 @@ local getTarget = function(origin: Vector3)
 
         if nTPart then tPart = nTPart; end;
 
-        local distance = mouse and (Vector2.new(pos.X, pos.Y) - Vector2.new(mouse.X, mouse.Y)).Magnitude or Vector2.new(pos.X, pos.Y).Magnitude;
+        local distance = (Vector2.new(pos.X, pos.Y) - UIS:GetMouseLocation()).Magnitude;
         if distance < cDistance then
             cPart = tPart;
             cDistance = distance;
